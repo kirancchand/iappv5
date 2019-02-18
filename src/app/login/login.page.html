@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+	<ion-list>
+		<ion-item>
+			<ion-input placeholder="Username" [(ngModel)]="username"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-input placeholder="Password" [(ngModel)]="password"></ion-input>
+		</ion-item>
+	</ion-list>	
+			<ion-button expand="block" color="primary" (click)="login()">Sign In</ion-button>
+			<a nav-transition="android" href="/register">
+          	<ion-button expand="full" color="tertiary">Sign Up</ion-button>
+        	</a>
+			
+	
+</ion-content>
